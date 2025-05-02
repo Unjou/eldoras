@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hall of Fame - Cerita Perjalanan SNBP</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/emoji-picker-element@1.12.0/index.js" type="module"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans flex flex-col min-h-screen">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="spinner"></div>
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 mt-4">Sedang Memuat...</h2>
+    </div>
+  </div>
+
+  <!-- Hall of Fame Section -->
+  <section class="py-16 flex-grow">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Hall of Fame</h2>
+      <div class="max-w-md mx-auto mb-8">
+        <input type="text" id="search-bar" placeholder="Cari berdasarkan nama, universitas, atau jurusan..." class="w-full p-2 rounded bg-gray-700 text-white">
+      </div>
+      <div class="empty-state text-center" style="display: none;">
+        <i class="fas fa-star text-5xl md:text-6xl text-gray-400 mb-4"></i>
+        <h3 class="text-2xl md:text-3xl font-bold">Belum Ada Cerita</h3>
+        <p class="text-lg md:text-xl text-gray-400">Jadilah yang pertama membagikan cerita perjalanan SNBP Anda!</p>
+      </div>
+      <div class="hof-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+  <div class="relative bg-white text-black rounded-lg shadow-lg w-11/12 md:w-3/4 lg:w-2/3 xl:w-1/2 max-h-[90vh] overflow-y-auto p-6">
+    <button id="close-modal" class="absolute top-4 right-4 text-2xl font-bold text-gray-700">&times;</button>
+    <div id="modal-body" class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <!-- Diisi lewat JS -->
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-10 mt-auto">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="text-white text-2xl md:text-3xl hover:text-yellow-400 transition-colors"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl md:text-3xl hover:text-yellow-400 transition-colors"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white text-2xl md:text-3xl hover:text-yellow-400 transition-colors"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="text-gray-400 text-center text-lg">© 2025 Cerita Perjalanan SNBP. Semua hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navbar bawah -->
+  <nav class="bg-gray-800 fixed bottom-0 left-0 right-0 z-40 border-t border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-evenly">
+      <a href="index.html" class="text-white flex flex-col items-center">
+        <i class="fas fa-home text-xl md:text-2xl"></i>
+        <span class="text-xs md:text-sm mt-1">Beranda</span>
+      </a>
+      <a href="hall-of-fame.html" class="text-white flex flex-col items-center">
+        <i class="fas fa-star text-xl md:text-2xl"></i>
+        <span class="text-xs md:text-sm mt-1">Hall of Fame</span>
+      </a>
+      <a href="kontribusi.html" class="text-white flex flex-col items-center">
+        <i class="fas fa-paper-plane text-xl md:text-2xl"></i>
+        <span class="text-xs md:text-sm mt-1">Kontribusi</span>
+      </a>
+    </div>
+  </nav>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'936dfbe1d9886764',t:'MTc0NTc1MzM4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Cerita Perjalanan SNBP</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="spinner"></div>
+      <h2 class="text-yellow-500">Memuat...</h2>
+    </div>
+  </div>
+  <img src="img/its.png" class="floating-logos logo-1" alt="Logo ITS">
+  <img src="img/ugm.png" class="floating-logos logo-2" alt="Logo UGM">
+  <img src="img/polije.png" class="floating-logos logo-3" alt="Logo POLIJE">
+  <img src="img/unair.png" class="floating-logos logo-4" alt="Logo UNAIR">
+  <img src="img/ub.png" class="floating-logos logo-5" alt="Logo UB">
+  <img src="img/unej.png" class="floating-logos logo-6" alt="Logo UNEJ">
+  <img src="img/unesa.png" class="floating-logos scattered-1" alt="Logo UNESA">
+  <img src="img/um.png" class="floating-logos scattered-2" alt="Logo UM">
+  <img src="img/undip.png" class="floating-logos scattered-3" alt="Logo UNDIP">
+  <img src="img/unsoed.png" class="floating-logos scattered-4" alt="Logo UNSOED">
+  <img src="img/unnes.png" class="floating-logos scattered-5" alt="Logo UNNES">
+  <img src="img/udayana.png" class="floating-logos scattered-6" alt="Logo UDAYANA">
+  <img src="img/tidar.png" class="floating-logos scattered-7" alt="Logo UTIDAR">
+  <img src="img/undiksha.png" class="floating-logos scattered-8" alt="Logo UI">
+  <img src="img/isis.png" class="floating-logos scattered-9" alt="Logo ISIS">
+  <img src="img/polines.png" class="floating-logos scattered-10" alt="Logo POLINES">
+  <img src="img/polteks.png" class="floating-logos scattered-11" alt="Logo POLTEKKES SURABAYA">
+  <img src="img/iain.png" class="floating-logos scattered-12" alt="Logo POLTEKKES SURABAYA">
+  <img src="img/uinsa.png" class="floating-logos scattered-13" alt="Logo UNNES">
+  <nav class="fixed bottom-0 left-0 w-full bg-gray-800 p-4 flex justify-around items-center z-10">
+    <a href="index.html" class="text-white flex flex-col items-center">
+      <i class="fas fa-home text-xl"></i>
+      <span class="text-sm">Beranda</span>
+    </a>
+    <a href="hall-of-fame.html" class="text-white flex flex-col items-center">
+      <i class="fas fa-star text-xl"></i>
+      <span class="text-sm">Hall of Fame</span>
+    </a>
+    <a href="kontribusi.html" class="text-white flex flex-col items-center">
+      <i class="fas fa-paper-plane text-xl"></i>
+      <span class="text-sm">Kontribusi</span>
+    </a>
+  </nav>
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4 animate-fadeIn relative">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Cerita <span class="text-yellow-500">SNBP SPAN-PTKIN</span></h1>
+  </section>
+  <section id="preview-halloffame" class="py-16 px-4 bg-gray-700">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-fadeIn-delayed">Hall of Fame</h2>
+    <div class="empty-state text-center hidden">
+      <i class="fas fa-star text-5xl text-yellow-500 mb-4 animate-pulse"></i>
+      <h3 class="text-2xl font-bold mb-2">Belum Ada Cerita</h3>
+      <p class="text-lg">Jadilah yang pertama membagikan cerita perjalanan SNBP-mu!</p>
+    </div>
+    <div class="preview-container grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"></div>
+  </section>
+
+  <section class="py-16 px-4 bg-gray-800">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-fadeIn-delayed">Timeline SNBP</h2>
+    <div class="timeline"></div>
+  </section>
+  <div id="modal" class="hidden">
+    <div id="modal-content"></div>
+  </div>
+  <footer class="bg-gray-800 py-6 text-center">
+    <p>© 2025 Cerita Perjalanan SNBP. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emoji-picker-element@1.12.0/index.js" type="module"></script>
+  <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'936dfbe30d707bd5',t:'MTc0NTc1MzM4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
